@@ -47,27 +47,3 @@ flatpak install flathub com.ktechpit.formatfactory
 FormatFactory uses the system `ffmpeg` and `ffprobe` binaries. The Snap and
 Flatpak builds bundle them; for a source build install them from your distro and
 ensure they are on `PATH` (or set their paths in **Settings → Tools**).
-
-## Packaging Instructions
-
-### Flatpak
-
-```bash
-./build-flatpak.sh
-```
-
-This builds the manifest locally against the KDE runtime and can produce a
-distributable single-file bundle.
-
-### Snap
-
-```bash
-snapcraft
-```
-
-The Snap version is derived from the CMake project version during build.
-
-## License
-
-Proprietary. Copyright (c) 2024-2026 Keshav Bhatt. All rights reserved.
-See [`LICENSE`](LICENSE).
